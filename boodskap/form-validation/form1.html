@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e5a8b5d405.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="form1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 
+  <title>LIST DATA</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid;
+      border-collapse: collapse;
+    }
+    .body1{
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+  </style>
+</head>
+
+<body class="body1">
+  <div class="container table2">
+    <table id="table" width="100%">
+      <tr>
+        <!-- <th>NO</th> -->
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+        <th>Country</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+      <tbody id="tbody"></tbody>
+
+    </table>
+  </div>
+  </div><br>
+
+  <div class="container">
+    <div class="title">UPDATE DATA</div>
+    <div class="content">
+      <form action="" id="myform" autocomplete="off">
+        <div class="user-details">
+         
+          <p id="name7"></p>
+          <div class="input-box">
+            <span class="details">First name</span>
+            <input type="text" id="first" placeholder="Enter your name" pattern="" required>
+          <p id="name1"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Last name</span>
+            <input type="text" id="last" placeholder="Enter your username" required>
+            <p id="name2"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="email" placeholder="Enter your email" required>
+            <p id="name3"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" id="phone" placeholder="Enter your number" required>
+            <p id="name4"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Age</span>
+            <input type="text" id="age" placeholder="Enter your age" required>
+            <p id="name5"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Country</span>
+            <input type="text" id="country" placeholder=" Enter your country" required>
+            <p id="name6"></p>
+
+            <!-- <select name="" id="country">
+                <option value="">Choose your country</option>
+                <option value="England">England</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="New zeland">New zeland</option>
+                <option value="West indians">West indians</option>
+               </select> -->
+          </div>
+          <input type="text" name="" id="id-val" hidden>
+        </div>
+        <!-- <div class="gender-details">
+              <input type="radio" name="gender" id="dot-1">
+              <input type="radio" name="gender" id="dot-2">
+              <input type="radio" name="gender" id="dot-3">
+              <span class="gender-title">Gender</span>
+              <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+                </label>
+              </div>
+            </div> -->
+        <div class="button">
+          <input type="button" onclick="register()" value="update">
+        </div>
+        <!-- <div class="button">
+               <button onclick="listdata()" ><a href="file:///home/arunclenton/boodskap/form-validation/form1.html">list</a></button>
+            </div> -->
+
+      </form>
+    </div>
+  </div>
+
+
+  <script src="form.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+<!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
+
+
+</html>

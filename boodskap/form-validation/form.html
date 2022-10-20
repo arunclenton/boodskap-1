@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>form validation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">form Validation</div>
+    <div class="content">
+      <form action="" id="myform" autocomplete="off">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First name</span>
+            <input type="text" id="first" placeholder="Enter your name" maxlength="10" required><br>
+            <p id="name1"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Last name</span>
+            <input type="text" id="last" placeholder="Enter your username" maxlength="10" onkeydown="border(this)" required><br>
+            <p id="name2"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" id="email" placeholder="Enter your email" maxlength="50" required><br>
+            <p id="name3"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" id="phone" placeholder="Enter your number" maxlength="10" onkeypress="numberfun(this)" required><br>
+            <p id="name4"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Age</span>
+            <input type="text" id="age" placeholder="Enter your age" maxlength="3" onkeypress="numberfun(this)" required><br>
+            <p id="name5"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Country</span>
+            <select name="" maxlength="30" id="country" onkeyup="border(this)">
+              <option value="">Choose your country</option>
+              <option value="England">England</option>
+              <option value="India">India</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="New zeland">New zeland</option>
+              <option value="West indians">West indians</option>
+            </select><br>
+            <p id="name6"></p>
+          </div>
+        </div>
+        <!-- <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div> -->
+
+       
+
+      </form>
+      <input type="submit" id="button5" onclick="register()" value="submit"> 
+      <div class="button1">
+        <button onclick="listdata()"><a href="/home/arunclenton/boodskap/form-validation/new.html">list</a></button>
+      </div>
+    </div>
+  </div>
+  <script src="new.js"></script>
+</body>
+
+</html>

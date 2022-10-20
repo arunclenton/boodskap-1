@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.jqueryui.min.css"> 
+    <link rel="stylesheet" href="form1.css">
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"> -->
+    <title>update list value</title>
+
+<style>
+  table ,th,td{
+    border: 1px solid #fff;
+  }
+  th{
+    color: aqua;
+  }
+</style>
+</head>
+
+<body>
+  <div class="back">
+  <a href="/home/arunclenton/boodskap/form-validation/form.html">back</a>
+</div>
+    <table width="100%">
+        <thead>
+            <tr>
+                <!-- <th>NO</th> -->
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Edit</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <div class="container">
+        <div class="title">UPDATE DATA</div>
+        <div class="content">
+          <form action="" id="myform" autocomplete="off">
+            <div class="user-details">
+              <div class="input-box1">
+                <input type="text"  id="id-value" placeholder=""  hidden><br>
+               
+              </div>
+              <div class="input-box">
+                <span class="details">First name</span>
+                <input type="text"  id="first" placeholder="Enter your name"  required><br>
+                <p id="name1"></p>
+              </div>
+              <div class="input-box">
+                <span class="details">Last name</span>
+                <input type="text" id="last" placeholder="Enter your username" required><br>
+                <p id="name2"></p>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" id="email" placeholder="Enter your email" required><br>
+                <p id="name3"></p>
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" id="phone" placeholder="Enter your number" onkeyup="numberfun(this)" required><br>
+                <p id="name4"></p>
+              </div>
+              <div class="input-box">
+                <span class="details">Age</span>
+                <input type="text" id="age" placeholder="Enter your age" onkeyup="numberfun(this)" required><br>
+                <p id="name5"></p>
+              </div>
+              <div class="input-box">
+                <span class="details">Country</span>
+                <input type="text" id="country" placeholder="enter your country" required>
+                <!-- <span class="details">Country</span>
+               <select name="" id="country">
+                <option value="">Choose your country</option>
+                <option value="England">England</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="New zeland">New zeland</option>
+                <option value="West indians">West indians</option>
+               </select><br>
+               <p id="name6"></p>
+              </div>
+            </div> -->
+            <!-- <div class="gender-details">
+              <input type="radio" name="gender" id="dot-1">
+              <input type="radio" name="gender" id="dot-2">
+              <input type="radio" name="gender" id="dot-3">
+              <span class="gender-title">Gender</span>
+              <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+                </label>
+              </div>
+            </div> -->
+            <div class="button">
+              <input type="button"  onclick="register()"
+              value="submit">
+            </div>
+            <!-- <div class="button1">
+               <button onclick="listdata()" ><a href="/home/arunclenton/boodskap/form-validation/new.html">list</a></button>
+            </div> -->
+           
+          </form>
+        </div>
+      </div>
+    <script src="new.js"></script>
+<!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+</body>
+</html>
